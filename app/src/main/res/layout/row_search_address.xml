@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row_main_list_shape"
+        android:paddingBottom="2dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="16dp"
+            android:id="@+id/Container">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ExpandAddress"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address Name"
+                    android:id="@+id/AddressName"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address Of 9562613599"
+                    android:layout_below="@+id/AddressName"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/AddressOf"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="13dp"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/ExpandAddress"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chevron_right_black_36dp"
+                android:background="@drawable/list_buttons"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/Container">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:id="@+id/AddToMyAddressButton"
+                android:background="@drawable/add_my_address_button_background"
+                android:clickable="true"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_person_add_black_36dp"
+                    android:id="@+id/AddToMyAddressButtonImage"
+                    android:tintMode="multiply"
+                    android:tint="@color/colorSecondaryText"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/AddToMyAddressButtonText"
+                    android:layout_marginLeft="8dp"
+                    android:text="Add To Contact Addresses"
+                    android:textSize="13dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorSecondaryText"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

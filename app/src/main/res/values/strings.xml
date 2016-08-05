@@ -1,0 +1,17 @@
+<resources>
+    <string name="google_maps_key">AIzaSyAZOYECsHWvU27NV0t0zv_Q2-55ZnIl1Dk</string>
+    <string name="static_maps_key">AIzaSyAz0XUzSgTTfIblo1OTcxtjDEfs7Xd1lws</string>
+    <string name="HostURL"> http://apos-gttixqditr.elasticbeanstalk.com/</string>
+
+    <string name="app_name">ShareLoc</string>
+    <string name="title_activity_login_page">LOGIN PAGE</string>
+    <string name="title_activity_main">SHARELOC</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_add_address">ADD ADDRESS</string>
+    <string name="title_activity_edit_address">Edit Address</string>
+    <string name="title_activity_search_history">Search History</string>
+    <string name="title_activity_view_address">View Address</string>
+    <string name="title_activity_view_sent_address">View Address</string>
+    <string name="title_activity_contact_addresses">Contact Addresses</string>
+</resources>

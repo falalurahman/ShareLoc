@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddressName"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="18dp"
+        android:typeface="sans"
+        android:text="AddressName"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddressOf"
+        android:textColor="@color/colorSecondaryText"
+        android:visibility="gone"
+        android:layout_marginTop="2dp"
+        android:textSize="13dp"
+        android:typeface="sans"
+        android:text="AddressName"/>
+</LinearLayout>

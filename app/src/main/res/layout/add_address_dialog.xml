@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:paddingTop="26dp"
+            android:paddingRight="26dp"
+            android:paddingLeft="26dp"
+            android:paddingBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Address"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/DialogTitle"
+                android:typeface="sans"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/colorPrimaryText"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DialogTitle"
+                android:layout_marginTop="15dp"
+                android:text="Enter a name for this address:"
+                android:textSize="15dp"
+                android:id="@+id/DialogMessage"
+                android:typeface="sans"
+                android:textColor="@color/colorSecondaryText"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DialogMessage"
+                android:id="@+id/AddressName"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryText"
+                android:background="@android:color/transparent"
+                android:hint="Address Name"
+                android:textColorHint="@color/colorTertiaryText"
+                android:textAlignment="center"
+                android:layout_marginTop="12dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AddressName"
+                android:layout_marginTop="12dp"
+                android:id="@+id/PublicCheckBox"
+                android:text="Make Address Public"
+                android:textSize="15dp"
+                android:checked="true"
+                android:typeface="sans"
+                android:textColor="@color/colorSecondaryText" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PublicCheckBox"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Cancel"
+                    android:clickable="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/Add"
+                    android:text="CANCEL"
+                    android:typeface="sans"
+                    android:textSize="13dp"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/dialog_buttons" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Add"
+                    android:clickable="true"
+                    android:text="ADD"
+                    android:typeface="sans"
+                    android:textSize="13dp"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="10dp"
+                    android:background="@drawable/dialog_buttons" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

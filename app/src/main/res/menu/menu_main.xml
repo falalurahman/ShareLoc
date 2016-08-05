@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.shopcoup.shareloc.MainActivity">
+    <item android:id="@+id/action_search" android:title="Search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:orderInCategory="98" app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_refresh" android:title="Refresh"
+        android:orderInCategory="99" app:showAsAction="never"/>
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

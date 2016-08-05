@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:paddingTop="26dp"
+            android:paddingRight="26dp"
+            android:paddingLeft="26dp"
+            android:paddingBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number Confirmation"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/DialogTitle"
+                android:typeface="sans"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/colorPrimaryText"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DialogTitle"
+                android:layout_marginTop="15dp"
+                android:text="ShareLoc will send a one time SMS message to verify your phone number:"
+                android:textSize="15dp"
+                android:id="@+id/DialogMessage"
+                android:typeface="sans"
+                android:textColor="@color/colorSecondaryText"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/DialogMessage"
+                android:layout_marginTop="5dp"
+                android:text="9562613599"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:id="@+id/DialogNumber"
+                android:typeface="sans"
+                android:textColor="@color/colorPrimaryText"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DialogNumber"
+                android:layout_marginTop="5dp"
+                android:text="Is this OK, or would you like to edit this number?"
+                android:textSize="15dp"
+                android:id="@+id/DialogConfirm"
+                android:typeface="sans"
+                android:textColor="@color/colorSecondaryText"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DialogConfirm"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Confirm"
+                    android:clickable="true"
+                    android:text="CONFIRM"
+                    android:typeface="sans"
+                    android:textSize="13dp"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="10dp"
+                    android:background="@drawable/dialog_buttons" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@+id/Confirm"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Edit"
+                    android:clickable="true"
+                    android:text="EDIT"
+                    android:textAlignment="center"
+                    android:typeface="sans"
+                    android:textSize="13dp"
+                    android:textColor="@color/colorPrimary"
+                    android:minWidth="80dp"
+                    android:padding="10dp"
+                    android:background="@drawable/dialog_buttons" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
